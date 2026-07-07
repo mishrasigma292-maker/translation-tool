@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translator</h1>
+        
+        <div class="wrapper">
+            <div class="box">
+                <select id="source-lang">
+                    <option value="en-GB">English</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="ja-JP">Japanese</option>
+                </select>
+                <textarea id="from-text" placeholder="Enter text here..."></textarea>
+                <div class="actions">
+                    <button id="speech-from" class="icon-btn">🔊 Speak</button>
+                    <button id="copy-from" class="icon-btn">📋 Copy</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <select id="target-lang">
+                    <option value="es-ES">Spanish</option>
+                    <option value="en-GB">English</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="ja-JP">Japanese</option>
+                </select>
+                <textarea id="to-text" placeholder="Translation will appear here..." readonly></textarea>
+                <div class="actions">
+                    <button id="speech-to" class="icon-btn">🔊 Speak</button>
+                    <button id="copy-to" class="icon-btn">📋 Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <button id="translate-btn">Translate Text</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
